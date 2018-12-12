@@ -1,0 +1,5 @@
+1) Сверстать макет
+Отступы - margin
+Фон - background
+рамка - border
+Выделенный текст - font-weight
