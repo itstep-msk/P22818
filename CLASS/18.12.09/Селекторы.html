@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Селекторы</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="test-priority" style="color: yellow">Тест приоритетности</div>
+
+<div>элемент без класса</div>
+<div class="apple">элемент c классом</div>
+<div id="orange">элемент c классом</div>
+
+<style>
+	div {
+		color: red;
+	}
+	.apple {
+		color: green;
+	}
+	.apple {
+		color: orange;
+	}
+	#orange {
+		color: blue;
+	}
+	.test-priority {
+		color: red !important;
+	}
+</style>
+
+</body>
+</html>
