@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position</title>
+</head>
+<body>
+
+<div class="apple"></div>
+<div class="orange"></div>
+<div class="frutis">
+	<div class="apple"></div>
+</div>
+
+<style>
+	.frutis {
+		width: 200px;
+		height: 200px;
+		background: grey;
+		position: relative;
+		top:-10px;
+	}
+	.apple, .orange {
+		width: 100px;
+		height: 100px;
+	}
+	.apple {
+		background: green;
+		position: absolute;
+		left: 0px;
+		right: 0;
+		top: 0px;
+		bottom: 0;
+		margin: auto;
+	}
+	.orange {
+		background: orange;
+	}
+</style>
+
+</body>
+</html>

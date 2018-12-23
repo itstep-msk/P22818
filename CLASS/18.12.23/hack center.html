@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Center element hack</title>
+</head>
+<body>
+
+<div class="way01"></div>
+<div class="way02">
+	<div class="apple"></div>
+</div>
+<div class="way03"></div>
+
+<style>
+	.way01 {
+		width: 100px;
+		height: 100px;
+		background: green;
+		margin: auto;
+		/* margin: 0 auto; */
+	}
+	.way02 {
+		text-align: center;
+	}
+	.apple {
+		width: 100px;
+		height: 100px;
+		background: yellow;
+		display: inline-block;
+		vertical-align: top;
+	}
+	.way03 {
+		width: 100px;
+		height: 100px;
+		background: orange;
+		margin-left: 50%;
+   		transform: translateX(-50%);
+	}
+</style>
+
+</body>
+</html>

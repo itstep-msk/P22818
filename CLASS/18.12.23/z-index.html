@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>z-index</title>
+</head>
+<body>
+
+<div class="apple"></div>
+<div class="orange"></div>
+<div class="plum"></div>
+
+<style>
+	body {
+		margin: 0;
+	}
+	.apple, .orange, .plum {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+	}
+	.apple {
+		left: 0;
+		top: 0;
+		background: green;
+		z-index: 2
+	}
+	.orange {
+		left: 20px;
+		top: 20px;
+		background: orange;
+		z-index: 1
+	}
+	.plum {
+		left: 40px;
+		top: 40px;
+		background: purple;
+	}
+</style>
+
+</body>
+</html>
