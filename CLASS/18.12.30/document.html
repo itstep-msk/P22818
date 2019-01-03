@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Doc</title>
+</head>
+<body>
+
+<div class="apple">Яблоки</div>
+
+<script>
+	console.log(document)
+	var apple = document.querySelector(".apple");
+	console.log(apple);
+	console.log(apple.innerHTML); // Яблоки
+
+	var count = 0;
+
+	/*var idTimer = setInterval(function() {
+		count++;
+		console.log("Работает!");
+		apple.innerHTML = "Апельсины";
+
+		if(count > 5) {
+			apple.innerHTML = "Яблоки";
+			clearInterval(idTimer);
+		}
+	}, 1000);*/
+
+	apple.addEventListener("click", function() {
+		console.log("Кликнули")
+	})
+
+</script>
+
+</body>
+</html>

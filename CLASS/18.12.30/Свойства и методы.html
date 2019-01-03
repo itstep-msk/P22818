@@ -1,0 +1,23 @@
+<script>
+	var obj = {
+		num: 5,
+		name: "Alex",
+		str: "Hola",
+		cleanKey: null,
+		greeting: function() {
+			return "Hola " + this.name;
+		}
+	}
+
+	console.log(obj.num);
+	console.log(obj.str);
+	console.log(obj);
+	obj.person = "Human";
+	console.log(obj);
+	console.log(obj.greeting());
+
+	var n = 5.123;
+	console.log(Number(n.toFixed())); // 5
+	console.log(+n.toFixed()); // 5
+	console.log("Hello".toUpperCase()); // "HELLO"
+</script>

@@ -1,0 +1,28 @@
+<script>
+	// Замакания
+	/*
+	{
+		"count": 0
+	}
+	*/
+	function Generator() {
+		var count = 0;
+
+		return function() {
+			count++;
+			return count;
+		}
+	}
+
+	var gen01 = Generator();
+	console.log(gen01()) // 1
+	console.log(gen01()) // 2
+	console.log(gen01()) // 3
+
+	var gen02 = Generator();
+	console.log(gen02()) // 1
+	console.log(gen02()) // 2
+
+	console.log(gen01()) // 4
+	console.log(gen02()) // 3
+</script> 
